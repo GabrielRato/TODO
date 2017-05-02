@@ -1,0 +1,68 @@
+ li.true{
+      text-decoration: none;
+      font-family: comic-sans;
+    } 
+    li.false{
+      text-decoration: line-through;
+      font-family: comic-sans;
+    } 
+
+    input.checkboxFour {
+        width: 40px;
+        height: 40px;
+        background: #ddd;
+        margin: 20px 90px;
+
+        border-radius: 100%;
+        position: relative;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+    }
+    input.checkboxFour label {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+
+    background: #333;
+    box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);
+  }
+  input.checkboxFour input[type=checkbox]:checked + label {
+    background: #26ca28;
+  }
+    body {
+      padding: 50px;
+      background-color: #66CCFF;
+      font-family: sans-serif;
+    }
+    .todoListMain .header input {
+      padding: 10px;
+      font-size: 16px;
+      border: 2px solid #FFF;
+    }
+
+    .todoListMain .header button:hover {
+      background-color: #003399;
+      border: 2px solid #003399;
+      cursor: pointer;
+    }
+
+    .todoListMain .theList {
+      list-style: none;
+      padding-left: 0;
+      width: 255px;
+    }
+
+    .todoListMain .theList li {
+      color: #333;
+      background-color: rgba(255,255,255,.5);
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+    }
